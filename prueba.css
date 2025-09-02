@@ -1,0 +1,76 @@
+body {
+  font-family: Arial, sans-serif;
+  background: #f8f8f8;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0;
+  padding: 20px;
+}
+
+.titulo {
+  font-size: 2rem;
+  margin-bottom: 20px;
+  color: #333;
+  text-align: center;
+}
+
+.tablero {
+  display: flex;
+  flex-direction: column;
+  border: 4px solid #333;
+  background: #fff;
+  width: 90vmin;
+  height: 90vmin;
+}
+
+.fila {
+  display: flex;
+  flex: 1;
+}
+
+.fila-superior, .fila-inferior {
+  justify-content: space-between;
+}
+
+.fila-central {
+  flex: 1;
+  display: flex;
+  justify-content: space-between;
+}
+
+.columna {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.centro {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 3px dashed #aaa;
+  margin: 5px;
+  text-align: center;
+  font-size: 14px;
+}
+
+.casilla {
+  border: 1px solid #000;
+  background: #e0e0e0;
+  width: 60px;
+  height: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 12px;
+  text-align: center;
+}
+
+.casilla.esquina {
+  width: 80px;
+  height: 80px;
+  font-weight: bold;
+  background: #fc1515d3;
+}
